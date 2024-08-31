@@ -2,16 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Trunk App</title>
-  
-<link rel="modulepreload" href="/eventspace-d06f6838e57ef6bb.js" crossorigin=anonymous integrity="sha384-SrHls5blQ+IfY0bGID9l3FQR1EEjo8qNFT5+WEOstgk6JxGtNWvaQtcNkUB9vMa3">
-<link rel="preload" href="/eventspace-d06f6838e57ef6bb_bg.wasm" crossorigin=anonymous integrity="sha384-G7k8hphezUydfF0nQ2l+QX3WBaZSEIuJ6WiOOoHB+qkJuNq1NS1ZaPBXbO2dAUrs" as="fetch" type="application/wasm"></head>
+    <ti
+        tle>Trunk App</title>
   <body>
     <p>Hello world!</p>
-  
-<script type="module" nonce="A7GRO3r15KmdiD5RSPlCHA==">
-import init, * as bindings from '/eventspace-d06f6838e57ef6bb.js';
-const wasm = await init('/eventspace-d06f6838e57ef6bb_bg.wasm');
+<script type="module">
+import init, * as bindings from 'eventspace.js';
+const wasm = await init('eventspace.wasm');
 
 
 window.wasmBindings = bindings;
